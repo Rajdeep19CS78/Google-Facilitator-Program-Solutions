@@ -22,7 +22,7 @@ gcloud compute instance-groups managed create web-server-group \
 
 
 
-gcloud compute firewall-rules create web-server-firewall \
+gcloud compute firewall-rules create permit-tcp-rule-357 \
           --allow tcp:80 \
           --network nucleus-vpc
 gcloud compute http-health-checks create http-basic-check
